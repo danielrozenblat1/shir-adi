@@ -22,9 +22,7 @@ const CourseCard = () => {
     <div className={styles.container}>
       <div className={styles.card}>
         {/* Decorative Shapes */}
-        <div className={styles.shape1}></div>
-        <div className={styles.shape2}></div>
-        <div className={styles.shape3}></div>
+      
 
         <header className={styles.header}>
           <h1 className={styles.title} id="קורס החלקות">תחזיקי חזק!</h1>
