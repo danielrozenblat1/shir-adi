@@ -1,7 +1,6 @@
 import { useState, useEffect, useRef } from 'react';
 import styles from './Special.module.css';
 import shir from "../../images/שיר עדי.png";
-import Loader from '../loader/Loader';
 
 const Stats = () => {
   const stats = [
@@ -32,27 +31,14 @@ const Stats = () => {
   ];
 
   const [counts, setCounts] = useState(stats.map(() => 0));
-  const [imageLoaded, setImageLoaded] = useState(false);
-  const [canAnimate, setCanAnimate] = useState(false);
+  const [isVisible, setIsVisible] = useState(false);
   const containerRef = useRef(null);
 
-  // Load image
   useEffect(() => {
-    const img = new Image();
-    img.onload = () => {
-      setImageLoaded(true);
-    };
-    img.src = shir;
-  }, []);
-
-  // Intersection Observer
-  useEffect(() => {
-    if (!imageLoaded) return;
-
     const observer = new IntersectionObserver(
       (entries) => {
         if (entries[0].isIntersecting) {
-          setCanAnimate(true);
+          setIsVisible(true);
           observer.disconnect();
         }
       },
@@ -64,36 +50,36 @@ const Stats = () => {
     }
 
     return () => observer.disconnect();
-  }, [imageLoaded]);
+  }, []);
 
-  // Animation
   useEffect(() => {
-    if (!canAnimate) return;
+    if (!isVisible) return;
+
+    const duration = 2000;
+    const steps = 60;
+    const interval = duration / steps;
 
     const timers = stats.map((stat, index) => {
-      let count = 0;
+      let current = 0;
+      const increment = stat.target / steps;
+      
       return setInterval(() => {
-        count += Math.ceil(stat.target / 50);
-        
-        if (count >= stat.target) {
-          count = stat.target;
+        current += increment;
+        if (current >= stat.target) {
+          current = stat.target;
           clearInterval(timers[index]);
         }
-
-        setCounts(prev => {
-          const newCounts = [...prev];
-          newCounts[index] = count;
+        
+        setCounts(prevCounts => {
+          const newCounts = [...prevCounts];
+          newCounts[index] = Math.round(current);
           return newCounts;
         });
-      }, 40);
+      }, interval);
     });
 
-    return () => timers.forEach(clearInterval);
-  }, [canAnimate]);
-
-  if (!imageLoaded) {
-    return <Loader />;
-  }
+    return () => timers.forEach(timer => clearInterval(timer));
+  }, [isVisible]);
 
   return (
     <div className={styles.statsContainer} ref={containerRef}>
