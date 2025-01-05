@@ -22,7 +22,7 @@ const GlassCard = () => {
             חומר החלקה ביתית המספיק ל-10 החלקות
           </p>
 
-     <Button text="אני רוצה לשמוע עוד פרטים" message="היי שיר הגעתי מהדף, אני רוצה לשמוע עוד לגבי מוצרי החלקה ביתית"/>
+     <button className={styles.button}>אני רוצה לשמוע עוד פרטים</button>
         </div>
 
         {/* Decorative Elements */}

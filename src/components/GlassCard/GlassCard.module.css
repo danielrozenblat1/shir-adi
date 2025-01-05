@@ -70,19 +70,29 @@
   }
   
   .button {
-    width: 100%;
-    padding: 0.5rem 1rem;
-    border-radius: 0.5rem;
-    background: rgba(193, 165, 162, 0.2);
-    color: rgb(0, 0, 0);
-    font-size: 1.1rem;
-    border: 1px solid rgba(255, 255, 255, 0.1);
-    backdrop-filter: blur(4px);
-    transition: all 0.3s ease;
-    font-family: 'AssistantR', sans-serif;
+    font-family: 'AssistantR';
+    font-size: 1rem;
+    width: 80%;
+    margin:2% auto;
+    z-index: 5;
+    color: rgba(0, 0, 0, 0.8);
+    background-color: rgba(255, 255, 255, 0.4);
+    padding: 15px 30px;
+    border: none;
+    border-radius: 10px;
+    direction: rtl;
     cursor: pointer;
+    transition: all 0.3s ease;
+    backdrop-filter: blur(10px);
+    -webkit-backdrop-filter: blur(10px);
+    box-shadow: 
+        0 4px 6px rgba(214, 182, 159, 0.3), 
+        inset 0 1px 0 rgba(217, 191, 190, 0.3),
+        inset 0 -2px 5px rgba(214, 182, 159, 0.1);
+    text-transform: uppercase;
+    position: relative;
+    overflow: hidden;
   }
-  
   .button:hover {
     transform: scale(1.05);
     transition: all 0.5s;
