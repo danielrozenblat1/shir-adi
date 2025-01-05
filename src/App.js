@@ -36,8 +36,8 @@ function App() {
   };
   return <>
   <NavBarNew/>
-  <FirstScreen scrolled={scrolled}/>
-  <StatsOverlay/>
+  
+  <StatsOverlay  scrolled={scrolled}/>
   
   <SecondScreen/>
   {/* <CourseCard/> */}
