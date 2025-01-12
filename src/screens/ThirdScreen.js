@@ -6,7 +6,7 @@ const ThirdScreen=()=>{
 
 return <>
 <div className={styles.title} id="החלקה ביתית">יודעת להחליק בעצמך ורוצה לחסוך בעלויות?</div>
-<div className={styles.description}>אני מזמינה אותך להזמין את חומרי ההחלקה הביתית שלי</div>
+<div className={styles.description}>אני מזמינה אותך להזמין את ההחלקה הביתית שלי</div>
 <GlassCard/>
 </>
 

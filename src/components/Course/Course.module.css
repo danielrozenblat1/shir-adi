@@ -206,7 +206,7 @@
   
 .sectionTitle {
     font-family: 'Assistant', sans-serif;
-    color: #8B4513;
+    color: black;
     font-size: 1.25rem;
     font-weight: 600;
     margin-bottom: 1.5rem;
@@ -250,7 +250,7 @@
 }
   
 .icon {
-    color: #82634e;
+    color: black;
     flex-shrink: 0;
 }
   

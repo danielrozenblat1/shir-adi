@@ -89,7 +89,7 @@ const CourseCard = () => {
             </div>
             <div className={styles.info}>
               <Clock className={styles.icon} size={20} />
-              <span>בין השעות: 9:00-14:00</span>
+              <span>בין השעות: 9:00-15:00</span>
             </div>
           </div>
 
@@ -113,17 +113,17 @@ const CourseCard = () => {
               
               <div className={styles.emphasizedItem}>
                 <Check className={styles.emphasizedIcon} size={20} />
-                <span>אני זמינה לך גם לאחר הקורס לכל שאלה,התייעצות או חשש</span>
+                <span>תקבלי ליווי צמוד שלי לאחר הקורס לכל שאלה,התייעצות או חשש</span>
               </div>
               
               <div className={styles.emphasizedItem}>
                 <Check className={styles.emphasizedIcon} size={20} />
-                <span>התלמידות בקורס עוברות הכשרה מלאה להחליך ביצוע</span>
+                <span>התלמידות הקורס עובדות הכשרה מלאה באופן עיוני ומעשי</span>
               </div>
 
               <div className={styles.emphasizedItem}>
                 <Check className={styles.emphasizedIcon} size={20} />
-                <span>כל מחזור מכיל עד 3 תלמידות כדי שכל תלמידה תקבל את היחס הכי אישי שיש</span>
+                <span>כל מחזור מכיל עד 3 תלמידות עם דגש על היחס הכי אישי ומקצועי שיש</span>
               </div>
             </div>
           </div>

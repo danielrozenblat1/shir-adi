@@ -14,7 +14,7 @@
   direction:rtl;
   width:90%;
   text-shadow: 1px 1px 1px rgba(245, 245, 245, 0.158);
-  color: #756356;
+  color: #3c2f27;
 }
 
 .title{
@@ -25,7 +25,7 @@
   direction:rtl;
   width:60;
   text-shadow: 1px 1px 1px rgba(245, 245, 245, 0.158);
-  color: #988281;
+  color: #523c3b;
 }
 
 .icon{
@@ -51,7 +51,7 @@
       direction:rtl;
       width:90%;
       text-shadow: 1px 1px 1px rgba(245, 245, 245, 0.158);
-       color: #756356;
+       color: #3c2f27;
   }
   .title{
       font-size:1.8rem;
@@ -61,7 +61,7 @@
       direction:rtl;
       width:60%;
       text-shadow: 1px 1px 1px rgba(245, 245, 245, 0.158);
-       color: #988281;
+       color: #523c3b;
   }
   .icon{
       display: flex;
@@ -87,7 +87,7 @@
       direction:rtl;
       width:90%;
       text-shadow: 1px 1px 1px rgba(245, 245, 245, 0.158);
-       color: #756356;
+       color: #3c2f27;
   }
   .title{
       font-size:2rem;
@@ -97,7 +97,7 @@
       direction:rtl;
       width:60%;
       text-shadow: 1px 1px 1px rgba(245, 245, 245, 0.158);
-       color: #988281;
+       color: #523c3b;
   }
   .icon{
       display: flex;
@@ -123,7 +123,7 @@
       direction:rtl;
       width:95%;
       text-shadow: 1px 1px 1px rgba(245, 245, 245, 0.158);
-       color: #756356;
+       color: #3c2f27;
   }
   .title{
       font-size:2.2rem;
@@ -133,7 +133,7 @@
       direction:rtl;
       width:60%;
       text-shadow: 1px 1px 1px rgba(245, 245, 245, 0.158);
-       color: #988281;
+       color: #523c3b;
   }
   .icon{
       display: flex;

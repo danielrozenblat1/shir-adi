@@ -17,9 +17,9 @@ const GlassCard = () => {
 
         {/* Content */}
         <div className={styles.content}>
-          <h2 className={styles.title}>חומר החלקות</h2>
+          <h2 className={styles.title}>החלקה ביתית</h2>
           <p className={styles.description}>
-            חומר החלקה ביתית המספיק ל-10 החלקות
+            חומר החלקה ביתית המספיק לעד כ-3 החלקות
           </p>
 
      <button className={styles.button}>אני רוצה לשמוע עוד פרטים</button>
