@@ -3,6 +3,9 @@ import styles from "./SecondScreen.module.css"
 import  succsess from "../Icons/wired-lineal-633-female-standing-morph-success (2).json" 
 import money from "../Icons/wired-lineal-414-money-bag-dollar-hover-shake (5).json"
 import control from "../Icons/wired-lineal-161-growth-hover-rising (1).json"
+import calm from "../Icons/wired-lineal-628-yoga-female-hover-pinch.json"
+import infinity from "../Icons/wired-lineal-233-arrow-22-hover-cycle (2).json"
+import famale from "../Icons/wired-lineal-692-hairdresser-barber-hover-pinch.json"
 import Box from "../components/box/Box"
 import Button from "../components/button/Button"
 import AboutMe from "../components/me/Me"
@@ -28,17 +31,17 @@ const SecondScreen=()=>{
         title="התמדה"
         description="הדרך להצלחה דורשת התמדה יומיומית בתרגול יומיומי ולא לעצור , 
 מי שקובע את ההצלחה שלך - זו רק את!"
-        icon={succsess}
+        icon={infinity}
       />
       <Box 
         title="נחישות"
         description="כדי להגיע לעסק מצליח שתמיד חלמת את צריכה להיות עם כוונה חד משמעית לעבר המטרה. תהיי רעבה לטרוף את המקצוע!"
-        icon={succsess}
+        icon={famale}
       />
       <Box 
         title="סבלנות"
         description="בניית עסק מצליח בתחום לוקחת זמן. סבלנות תעזור לך לא לאבד את עצמך גם בתהליך הלמידה, גם בבניית המוניטין, וגם ביצירת רשת לקוחות נאמנה"
-        icon={succsess}
+        icon={calm}
       />
 </div>
 <Button text="שיר, אני רוצה לשמוע עוד"/>
